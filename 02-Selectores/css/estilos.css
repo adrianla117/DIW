@@ -1,0 +1,50 @@
+/*SELECTORES:
+    Selectores básicos
+    Combinadores
+    Selectores de Pseudoclases
+    Selectores de Pseudoelementos
+    Selectores de atributos
+*/
+/*
+    SELECTORES BÁSICOS:
+        Universal: * (Selecciona todos los elementos del HTML)
+        Etiqueta/Elemento: p, h1, h2, h3, ul, ol, table... (Coge todos los elementos que hay en la etiqueta)
+        Encadenado/Agrupado: (,)
+        De Descendientes directos: (>) selecciona hijos directos
+        De Descendientes: ( ) selecciona a todos los descendientes
+        De Clases: (.nombre clase)
+        De Identificadores: (#nombre_id)
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    color:aqua;
+    text-align: center;
+}
+p{
+    color:blue;
+}
+h1, h2{
+    text-align: center;
+}
+div > a{
+    color:palevioletred;
+}
+div > p{ /*Se cambiará las p hijos de los div*/
+    color: green;
+}
+
+div p{ /*Aquí se cambiarán a todos los p que sean descendients de los div*/
+    color: yellow;
+}
+.contenedor > a{ /*.contenedor a*/
+    color:blueviolet;
+}
+.contenedor2 > a{ /*.contenedor2 a*/
+    color:blanchedalmond;
+}
+#cuerpo > p{ /*el # es para los id*/
+    color:red;
+}

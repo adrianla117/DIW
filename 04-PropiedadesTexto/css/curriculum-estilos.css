@@ -1,0 +1,14 @@
+h1, h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: rgb(240, 210, 171);
+    border-radius: 20px;
+    
+}
+
+section > ul{
+    color: red;
+}

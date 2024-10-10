@@ -1,0 +1,52 @@
+/*color: red*/
+.color{
+    /*color:azure;*/
+    /*color: rgb(120, 175, 224, 0.8);*/ /*El último parámetro que podemos poner en el rgb es la transparencia*/
+    color: #46466d;
+}
+/*text-align: center, left, right, justify*/
+.alineacion{
+    text-align: center;
+}
+
+/*vertical-align: alineación vertical, elementos en línea dentro de contenedores (img dentro
+de p), y también se usa en las tablas td para alinear el texto. (top, bottom, baseline...)*/
+
+/*text-decoration: es la prop abreviada, no importa el orden. Solo es obligatorio el tipo de línea
+    text-decoration-color
+    text-decoration-line
+    text-decoration-thickness
+    text-decoration-style
+*/
+.subrayado{
+    text-decoration-line: underline; /*donde va el subrayado*/
+    text-decoration-color: blueviolet; /*color del subrayado*/
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+    text-decoration: underline aquamarine double 2px; /*Esto es lo mismo que lo arriba pero en uno*/
+    /*text-decoration: none; Gracias a esto se puede quitar el subrayado de los enlaces*/
+    /*text-decoration: underline;*/
+}
+
+/*text-transform*/
+.transformacion{
+    text-transform: uppercase;/*Transforma el texto en mayúsculas o minúsculas*/
+}
+
+/*text-shadow:sombrah sombrav desenfoque color*/
+.sombra{
+    font-size: 30px;
+    text-shadow: 2px 2px 5px gray, 2px 2px 5px red;/*obligatorio mínimo la sombra vertical y sombra horizontal*/
+}
+
+/*espaciado:
+    letter-spacing
+    word-spacing
+    text-indent
+    line-heigh*/
+.espaciado{
+    text-indent: 20px;
+    letter-spacing:10px;
+    word-spacing: 20px;
+    line-height: 40px;
+}
