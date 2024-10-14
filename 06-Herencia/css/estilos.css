@@ -1,0 +1,28 @@
+body{
+    /*No se hereda:*/
+    background-color: aquamarine; /*No se hereda aunque esté todo coloreado ya que los elementos tienen fondos transparentes*/
+    border: 2px solid black;
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+    /*Heredable:*/
+    font-size: 17px; /*Todo tiene 17 px menos el encabezado que tiene su propio tamaño y el enlace, que no le afecta nada*/
+    color: cadetblue;
+}
+
+header{
+    /*Heredable:*/
+    text-align: center;
+    color: blueviolet; /*Para mirar las diferencias mejor en Inspeccionar elemento en la web*/
+    /*No heredable:*/
+    border: 2px dotted blue;
+}
+
+h1{
+    border: 3px dashed pink; /*Como el border no es una propiedad heredable, forzamos con inherit para que la herede*/
+    color: red; /*Reestablece el color/valor por defecto*/
+    text-align: initial;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
