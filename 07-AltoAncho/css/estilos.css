@@ -1,0 +1,31 @@
+/*
+    ALTO Y ANCHO
+    width
+    height
+    min-width
+    max-width
+    min-height
+    max-height
+
+    Medidas Absolutas (px, cm, mm, in, pt, pc...)
+    Medidas Relativas (%, em, rem, viewport, auto)
+    inherit (el alto y el ancho no se heredan), initial
+
+*/
+.caja1, .caja2, .caja3{
+    background-color: aquamarine;
+    border: 1px solid green;
+    height: 100px;
+}
+
+.caja1{
+    width: 600px;
+}
+
+.caja2{
+    max-width: 600px; /*Con max-width, si es menor de 600px, como cuando empequeñecemos la pantalla, se adapta*/
+}
+
+.caja3{
+    min-width: 500px;
+}

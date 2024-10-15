@@ -1,0 +1,84 @@
+/*BORDE
+    border: 2px solid black;
+    border-color:
+    border-style: solid, dotted, dashed, double, inset, outset, ridge
+    border-width: 2px
+
+    4 bordes:
+    border-top
+    border-bottom
+    border-left
+    border-right
+
+    border-radius
+*/
+
+.caja1{
+    border-bottom: 2px ridge gold;
+    border-top: 3px inset pink;
+    border-left: 1px dotted green;
+    border-right: 5px dashed lightskyblue;
+    height:200px;
+    width:200px;
+}
+/*Lo que hay dentro del borde, el relleno: padding
+    padding-top: 
+    paddin-bottom: 
+    padding-left: 
+    padding-right: 
+
+    padding: 20px;
+    padding: 10px 20px; superior/inferior  derecho/izquierda
+    padding: 10px 5px 20px; superior/derecho    izquierda/inferior
+    padding: 5px 10px 15px 20px;    superior/derecho    inferior/izquierda
+*/
+*{ /*selector universal: todos los elementos del html se les aplica esa propiedad*/
+    margin: 0px;
+    padding: 0px;
+}
+
+.caja2{
+    width:300px;
+    height: 200px;
+    border: 2px solid pink;
+    padding: 10px; /*Es el relleno interno*/
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+    /*margin: 20px 0px 0px 20px; Así sería con la propiedad abreviada*/
+}
+
+p{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+/*Espacio fuera del borde: margin
+    marging-top: 20px;
+    marging-bottom: 
+    marging-left: 
+    marging-right: 
+
+    marging: 20px; todos
+    marging: 10px 20px; superior/inferior  derecho/izquierda
+    marging: 10px 5px 20px; superior/derecho    izquierda/inferior
+    marging: 5px 10px 15px 20px;    superior/derecho    inferior/izquierda
+*/
+
+/*COLAPSO DE MÁRGENES*/
+.caja3, .caja4{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.caja3{
+    margin-bottom: 20px;
+}
+
+.caja4{
+    margin-top: 20px;
+}

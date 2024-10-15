@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    border: 2px solid #00F;
+}
+h2{
+    border: 2px solid #AAA;
+}
+ul{
+    border: 2px solid #0F0;
+}
+
+.lista1 > li{ /*Así queda mejor que con .lista1 solo*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.enc1{
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.enc2{
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.li1, .li2, .li3, .li4{ /*Así para que no afecte al último elemento de la lista*/
+    margin-bottom: 15px;
+}
