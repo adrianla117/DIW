@@ -1,0 +1,76 @@
+/*Cambiar estilos a los estados del enlace*/
+
+/*no visitado*/
+a:link{
+    color: lawngreen;
+    font-family: monospace;
+    font-weight: 400;
+}
+
+/*visitado*/
+a:visited{
+    color: brown;
+    font-size: 15px;
+}
+
+/*pasar el ratón*/
+a:hover{
+    color: teal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*click en enlace*/
+a:active{
+    color: blueviolet;
+    font-size: 28px;
+}
+
+#caja{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+/*Puedo combinar identificadores/clases con pseudoclases*/
+#caja:hover{
+    background-color: violet;
+}
+/*Pseudoclases en listas*/
+ul li:first-child{
+    font-weight: 700;
+    font-size: 20px;
+}
+/*last-child*/
+ul li:last-child{ /*Es lo mismo que last-on-type*/
+    color:pink;
+    text-decoration: underline overline solid pink;
+}
+ul li:nth-child(3){
+    font-size: italic;
+    text-shadow: 2px 2px 4px green;
+}
+ul li:nth-child(1):hover{ /*Para cualquier lista que pueda tener como descendientes hijos li, aplicar hover solamente a un elemento, el primero*/
+    color: red;
+}
+
+/*Pregunta que al hacer hover sobre ella muestre la respuesta correcta*/
+/*Con <div> habría un espacio muy grande; con p cuando pasemos por encima del texto de p se pone en verde.*/
+p:hover + ol li:nth-child(2){
+    color: greenyellow;
+    font-size: 15px;
+}
+
+/*Pseudoclases en formularios*/
+input:focus{ /*Los input acceden a la clase focus*/
+    background-color: pink;
+    border: 2px solid purple;
+}
+
+#fnom:required{
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+#fape:disabled{
+    background-color: gray;
+    color: white;
+}

@@ -1,0 +1,24 @@
+/*COMBINADOR DE DESCENDIENTES*/
+div p{ /*Colorea a todos los p descendientes de un div*/
+    color: red;
+}
+
+/*COMBINADOR DE DESCENDIENTES DIRECTOS (>)*/
+div > p{ /*Colorea a todos los p que sean descendientes directos (hijos) de un div*/
+    color: green;
+}
+
+/*COMBINADOR DE HERMANO SIGUIENTE (+)*/
+div + p{ /*Colorea a los hermanos, osea colorea a los p que están después de los div a su misma altura. 
+Por ejemplo P6, P7 y P8 deberían estar coloreados, ya que tienen un div justo antes. P9 no porque solo es EL siguiente (1)*/
+    color: purple;
+}
+
+/*COMBINADOR DE HERMANOS SIGUIENTES (~)*/
+div ~ p{ /*Selecciona a todos los p que sean hermanos de div en plural, osea que elegiría a P6, P7, P8 Y P9.*/
+    color: blue;
+}
+
+div > p + p{ /*Colorearía solo P3 porque salta al siguiente P después de un descendiente directo (creo)*/
+    color: aqua;
+}
