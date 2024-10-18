@@ -1,0 +1,42 @@
+h1::before{ /*Le digo que antes del h1 meta algún contenido*/
+    content: "antes del h1";
+    color: red;
+}
+
+
+h1::after{ /*Le digo que después del h1 meta algún contenido*/
+    content:"después del h1";
+    color: green;
+}
+
+/*Quiero cambiar el estilo del placeholder cuando el input tenga el foco. El foco está clickado dentro del input y estás listo para escribir*/
+/*:focus*/
+#fnom:focus::placeholder{
+    color: red;
+}
+
+.seleccionado::selection{ /*Cuando seleccionas con el click izquierdo pulsado por el texto debería estar en rosa en vez del azul por defecto*/
+    background-color: pink;
+    color: purple;
+    font-weight: 900;
+}
+
+ul:nth-of-type(2) li::marker{ /*Buscamos el 2 ul que aparezca en el documento, busca los li que tiene y marcalos*/
+    color: red;
+    font-size: 20px;
+}
+
+.seleccionado::first-letter{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: aqua;
+}
+
+.seleccionado::first-line{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rebeccapurple;
+}
+
+body{ /*La fuente se suele indicar en el elemento body*/
+    font-family: 'Courier New', Courier, monospace;
+}
