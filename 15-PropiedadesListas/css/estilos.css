@@ -1,0 +1,53 @@
+/*PROPIEDADES DE LAS LISTAS*/
+ul{
+    /*propiedad abreviada*/
+    list-style: square inside;
+}
+
+ol{
+    /*cambia la posición de la viñeta*/
+    list-style-position: inside;
+    /*pone una imagen como viñeta*/
+    list-style-image: url('corrr.png');
+    /*cambia la viñeta*/
+    /*list-style-type: lower-roman;*/
+    /*para eliminar viñetas*/
+    list-style-type: none;
+}
+
+ul li:nth-child(even):hover{
+    color: red;
+}
+
+ul li:nth-child(odd):hover{
+    color: blue;
+}
+
+/*PROPIEDADES DE LAS TABLAS: border-collapse, border, margin, text-align, vertical-align, etc*/
+table{
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid black;
+    height: 100px;
+}
+
+td{
+    vertical-align: top;
+}
+
+tr th{
+    background-color: gainsboro;
+}
+
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+
+tr:nth-child(odd){
+    background-color: violet;
+}

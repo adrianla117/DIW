@@ -1,0 +1,32 @@
+i{
+    color: red;
+    font-size: 50px;
+}
+
+/*PROPIEDADES DEL FONDO*/
+/*background-color
+    background-image
+    background-repeat
+    background-size
+    background-position
+    background-attachment
+*/
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: brown;
+    background-size: 100px 100px; /*con contain no lo corta/duplica*/
+    background-position: right top; /*le indicamos donde queremos que se posicione, por defecto es arriba a la izquierda*/ /*si está en center center y no le damos altura, estaría solo arriba en el centro*/
+    background-image: url('avatar.jpg'); /*así ponemos una imagen*/
+    background-attachment: fixed; /*si es scroll se mueve con la barra de desplazamiento, si es fixed está fijado y se mueve con nosotros a medida que bajamos*/
+    background-repeat: no-repeat; /*así no se repite todo el rato en el eje x e y*/
+    height: 1000px;
+}
+
+p{
+    font-size: 100px;
+    color: yellow;
+}
