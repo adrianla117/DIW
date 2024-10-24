@@ -1,0 +1,26 @@
+h2::first-letter{
+    color: violet;
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: xx-large;
+}
+
+p::first-line{
+    font-style: italic;
+    font-size: small;
+    text-decoration: underline solid black;
+}
+
+p::before{
+    content: "*.";
+    color: blue;
+}
+
+p::after{
+    content:" - Aloja more don";
+    color: red;
+}
+
+p::selection{
+    color: brown;
+}

@@ -1,0 +1,18 @@
+/*
+div p {background-color:pink;}
+	Le aplicará el color a todos los <p> que estén contenidos dentro de un <div>
+	Párrafos a los que afecta: 1, 2, 3, 4, 7, 8, 9, 10
+
+div > p {background-color:pink;}
+    Le aplica el color a los <p> que sean hijos directos del <div>
+    Párrafos a los que afecta: 1, 2, 4, 7, 8, 9, 10
+
+div + p {background-color:pink;}
+    Aplica el color solo al primer <p> que estea inmediatamente en un <div>, no a los siguientes que están contenidos en él.
+    Párrafos a los que afecta: 5, 10, 11
+
+div ~ p {background-color:pink;}
+    Aplica el color a todos los <p> que estén después de un <div>, no tienen que estar contenidos en él.
+    Párrafos a los que afecta: 5, 6, 10, 11
+
+*/

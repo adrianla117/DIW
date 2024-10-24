@@ -1,0 +1,32 @@
+table{
+    width:50%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    text-align: center;
+    border: 2px solid black;
+}
+
+th{
+    height: 70px;
+    vertical-align: middle;
+    background-color: sienna;
+    color: cornsilk;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+tr:nth-child(even){
+    background-color: cornsilk;
+}
+
+tr:nth-child(odd){
+    background-color: darksalmon;
+}
+
+tr:hover{
+    background-color: sienna;
+    color: white;
+}

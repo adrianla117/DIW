@@ -1,0 +1,44 @@
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+    font-size: 15px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 3px;
+}
+
+.fila1{
+    color:red;
+}
+
+.fila2{
+    color:blue;
+}
+
+.fila3{
+    color:green;
+}
+
+.fila4{
+    color:orange;
+}
+
+.fila5{
+    color:purple;
+}
+
+td:nth-child(2), th:nth-child(2){
+    background-color: yellow;
+}
+
+td:nth-child(3), th:nth-child(3){
+    background-color: pink;
+}
+
+td:nth-child(4), th:nth-child(4){
+    background-color: grey;
+}

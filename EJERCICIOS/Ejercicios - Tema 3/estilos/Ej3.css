@@ -1,0 +1,16 @@
+.lista1 li:last-child{
+    font-size: 25pt;
+    color: cadetblue;
+    text-decoration: underline solid cadetblue;
+}
+
+.lista1 li:first-child{
+    font-size: 15pt;
+    color: blueviolet;
+    font-weight: bolder;
+}
+
+.lista2 li:only-child{
+    font-size: 30pt;
+    text-shadow: 2px 2px 2px salmon;
+}

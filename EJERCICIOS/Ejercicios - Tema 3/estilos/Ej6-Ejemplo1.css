@@ -1,0 +1,14 @@
+body {
+    background-image: url('https://m.media-amazon.com/images/I/A1CvDB2HYTL._AC_UF894,1000_QL80_.jpg');
+}
+
+.caja1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+p{
+    font-size: 25px;
+}

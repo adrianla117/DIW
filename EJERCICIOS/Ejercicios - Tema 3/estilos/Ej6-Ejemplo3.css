@@ -1,0 +1,11 @@
+button{
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled{
+    background-color: gray;
+    color: lightgray;
+    cursor: not-allowed;
+}

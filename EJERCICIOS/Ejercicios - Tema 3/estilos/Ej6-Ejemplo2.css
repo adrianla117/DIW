@@ -1,0 +1,10 @@
+.lista1 li::marker{
+    color: yellowgreen;
+    font-size: 20px;
+    content: "----- "
+}
+
+.lista2 li::marker{
+    color: red;
+    font-size: 40px;
+}
