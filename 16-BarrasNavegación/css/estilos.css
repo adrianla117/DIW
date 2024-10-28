@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;/*Quitamos los espacios así*/
+    box-sizing: border-box; /*ancho y alto real = content + border + padding*/
+}
+
+ul{
+    list-style-type: none;
+    /*list-style: none*/
+    margin-bottom: 20px;
+}
+
+.vertical{
+    width: 200px;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+.vertical li a{
+    text-decoration: none; /*así no hay subrayado*/
+    /*text-decoration-style: none;*/
+    display: block; /*para que el enlace a se visualice como bloque, y así ocupa lo que su padre li que también es un elemento en bloque*/
+    padding: 16px 20px;
+}
+
+.vertical li a:hover:not(.activo){/*la pseudoclase not es algo a lo que no quieres que aplique un estilo*/
+    background-color: orange;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+}
+
+.vertical li a.activo{
+    background-color: lightskyblue;
+    color:orange;
+}
+
+
+/*HORIZONTAL*/
+.horizontal{
+    background-color: gainsboro;
+    text-align: center;
+}
+
+.horizontal li{
+    display: inline-block; /*li en línea y se pueda dar tamaño*/
+}
+
+.horizontal li a{
+    text-decoration: none; /*así no hay subrayado*/
+    /*text-decoration-style: none;*/
+    padding: 16px 20px;
+    display: inline-block;
+}
+
+.horizontal li a:hover:not(.activo){/*la pseudoclase not es algo a lo que no quieres que aplique un estilo*/
+    background-color: orange;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+}
+
+.horizontal li a.activo{
+    background-color: lightskyblue;
+    color:orange;
+}
+

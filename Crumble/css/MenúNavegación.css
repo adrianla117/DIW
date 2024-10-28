@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;/*Quitamos los espacios así*/
+    box-sizing: border-box; /*ancho y alto real = content + border + padding*/
+}
+
+ul{
+    list-style-type: none;
+    /*list-style: none*/
+    margin-bottom: 20px;
+    padding: 20px;
+}
+/*Para poner las rayas entre las opciones ponemos un padding entre las opciones y la lista y le damos luego border-left/right a cada opcion*/
+
+.horizontal{
+    font-family: 'Kaisei HarunoUmi';
+    font-size: 18px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(255, 147, 147, 0.82);
+    display: flex;
+    align-items: center;
+}
+
+.horizontal li{
+    display: inline-flex; /*li en línea y se pueda dar tamaño*/
+    align-items: center;
+    border-right: 1px solid rgb(255, 147, 147, 0.82);
+}
+
+.horizontal li:last-child{
+    border-right: none; /*Así hacemos que la última raya no le afecte al último elemento de nuestra lista*/
+}
+
+.horizontal li a{
+    text-decoration: none; /*así no hay subrayado*/
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.horizontal li:first-child{
+    
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px; 
+}
