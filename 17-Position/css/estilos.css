@@ -1,0 +1,58 @@
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.estatico{
+    position: static; /*valor por defecto*/
+    background-color: aqua;
+    /*no se puede usar top, bottom, left, right, no se va a mover, es estático*/
+}
+
+.relativo{
+    position: relative;
+    background-color: burlywood;
+    left: 200px;
+    top: -200px;
+}
+
+.absoluto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    overflow: hidden; /*hace que el contenedor (hijo) no desborde por fuera*/
+    z-index: -4; /*así se ven las letras que está tapando por detrás*/
+}
+
+.hijo{ /*Se mueve con respecto a su padre, dentro de él*/
+    width: 60px;
+    height: 60px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.fijo{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: brown;
+    z-index: 100;
+}
+
+.pegajoso{ /*pasa por encima del fixed porque es el último que se ha puesto (el sticky)*/
+    width: 100%;
+    background-color: lightgreen;
+    position: sticky;
+    top: 0;
+}
+
+/*z-index: permite ordenar los elementos para controlar quién se ve arriba o abajo
+solo se puede usar en elementos posicionados (todos los position distintos a static)
+es un número que indica el orden y puede ser positivo o negativo, si es negativo estará más
+hacia abajo que algo positivo
+Si un elemento no tiene z-index su valor por defecto es 0
+Si dos elementos tienen el mismo valor, el último se situará encima*/
