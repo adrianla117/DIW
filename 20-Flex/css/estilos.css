@@ -1,0 +1,77 @@
+/*Display: flex
+    El elemento que tenga la propiedad display flex tendrá una serie de propiedades específicas
+    y sus hijos directos también tendrán unas propiedades específicas.
+
+    Propiedades del contenedor flexible (padre)
+        flex-direction: indica la dirección de los hijos flexibles. row(valor por defecto), column,
+        row-reverse (al final alternando el orden), column-reverse
+
+        justify-content: alinea horizontalmente cuando la dirección es row y verticalmente cuando la dirección es column (en definitiva, depende de flex-direction)
+        center, flex-start, flex-end, space-between, space-evenly, space-around
+
+        align-items: alinea vertical u horizontal dependiendo del flex-direction
+        valores: center, flex-start, flex-end (no los valores space-between, space-around, space-evenly)
+
+        flex-wrap: permite tener o no varias filas de elementos flexibles
+        no-wrap (por defecto, no podemos tener varias filas), wrap (sí podemos tener varias filas)
+
+        align-content: modifica el comportamiento de la propiedad flex-wrap. Es similar a align.items, pero
+        en vez de alinea items flexibles, alinea línea flexibles.
+        center, flex-start, flex-end, space-between, space-around
+
+    Propiedades de los hijos directos del contenedor flexible
+*/
+*{
+    box-sizing: border-box; /*Así en vez de medir 101px (border+width por ejemplo), mediría 100px como está especificado en el width*/
+    margin: 0;
+    padding 0;
+}
+
+.flex-container-row, .flex-container-col{
+    background-color: aquamarine;
+}
+
+.flex-container-row{
+    display: flex; /*Por defecto, los hijos se van a colocar uno tras otro*/
+    flex-direction: row; /*No hace nada porque es el valor por defecto*/
+    /*Alinea horizontalmente, como una fila*/
+    justify-content: space-between;
+    /*Alinea verticalmente, no veré nada (no veré mi align-items) si mi contenedor no tiene altura para que se muevan*/
+    height: 300px;
+    align-items: center;
+    flex-wrap: wrap; /*Ahora puedo tener más filas. En el momento que no cojan más elementos a 100 pixeles (es lo que le dijimos que midiesen) en la fila, se irá a otra nueva fila abajo*/
+    align-content: center; /*Es la alineación de las filas*/
+}
+
+/*justify-content es para el eje horizontal y align-items es para el eje vertical. Distribuye el espacio entre los elementos verticalmente/horizontalmente*/
+
+/*space-around: Hay más espacio entre los elementos que entre los elementos y lo de fuera*/
+/*space-evenly: Siempre hay el mismo espacio entre los elementos y entre los elementos y lo de fuera*/
+/*space-between: Alinea el primer y último item, sin espacio entre el final y el principio entre item, pero con un espacio compartido igual entre los items*/
+
+/*Cuando es flex-direction: column; justify-content cambia al eje vertical y align-items cambia al eje horizontal*/
+
+.flex-container-col{
+    display: flex;
+    flex-direction: column;
+    /*Alinea verticalmente, para verlo tengo que dar altura al contenedor, sino no tengo
+    espacio para que se alineen verticalmente*/
+    height: 700px;
+    justify-content: space-evenly;
+    /*Alinea horizontalmente*/
+    align-items: center;
+    flex-wrap: wrap; /*Lo mismo que en el de arriba pero cuando no cojan más se iran a otra nueva columnas*/
+    align-content: space-between;
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+/*Con order: (aquí insertamos el número para la posición) hacemos que un elemento vaya específicamente en un sitio (por ejemplo, antes o después de cierto elemento)*/
+
+/*align-self: Especifica el alineamiento para un item seleccionado dentro del contenedor flexible.
+    center, flex-start, flex-end, stretch*/
