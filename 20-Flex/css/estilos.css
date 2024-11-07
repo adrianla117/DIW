@@ -16,10 +16,12 @@
         no-wrap (por defecto, no podemos tener varias filas), wrap (sí podemos tener varias filas)
 
         align-content: modifica el comportamiento de la propiedad flex-wrap. Es similar a align.items, pero
-        en vez de alinea items flexibles, alinea línea flexibles.
+        en vez de alinear items flexibles, alinea línea flexibles.
         center, flex-start, flex-end, space-between, space-around
 
     Propiedades de los hijos directos del contenedor flexible
+
+        */
 */
 *{
     box-sizing: border-box; /*Así en vez de medir 101px (border+width por ejemplo), mediría 100px como está especificado en el width*/
@@ -71,7 +73,55 @@
     background-color: bisque;
 }
 
-/*Con order: (aquí insertamos el número para la posición) hacemos que un elemento vaya específicamente en un sitio (por ejemplo, antes o después de cierto elemento)*/
+/*Propiedades de los hijos directos del contenedor flexible*/
 
-/*align-self: Especifica el alineamiento para un item seleccionado dentro del contenedor flexible.
-    center, flex-start, flex-end, stretch*/
+/*Con order: (aquí insertamos el número para la posición) cambia el orden del hijo flexible. Hacemos que un elemento vaya específicamente en un sitio (por ejemplo, antes o después de cierto elemento)*/
+.flex-item:nth-of-type(1){ /*busca el primer elemento que tenga esa clase (flex-item)*/
+    order: 5;
+    flex-basis: 100px;
+    width: 50px; /*No le hace caso, prevalece flex-basis. width da el tamaño pero de forma general*/
+    align-self: flex-start;
+    flex-shrink: 0; /*no se puede reducir*/
+}
+
+.flex-item:nth-of-type(2){
+    order: 4;
+    flex-basis: 300px;
+    align-self: center;
+    flex-grow: 1; /*con flex-grow, cuanto mayor es el número, más espacio le va a tocar*/
+    flex-shrink: 3;
+}
+
+.flex-item:nth-of-type(3){
+    order: 3;
+    flex-basis: 200px;
+    align-self: flex-end;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+.flex-item:nth-of-type(4){
+    order: 2;
+    flex-basis: 100px;
+    align-self: center;
+    flex-grow: 0; /*no puede crecer si es 0*/
+    flex-shrink: 1;
+}
+
+.flex-item:nth-of-type(5){
+    order: 1;
+    flex-basis: 400px;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+/*flex-basis: indica el tamaño del hijo flexible.
+
+/*align-self: alinea el hijo flexible. Especifica el alineamiento para un item seleccionado dentro del contenedor flexible.
+    center, flex-start, flex-end*/
+
+/*flex-grow: cuando hay espacio disponible, indica si puede crecer o no un hijo flexible
+    valores: 0 (no permite crecer), mayor que 0 permite crecer y cuanto mayor sea más crece*/
+
+/*flex-shrink: cuando no hay espacio, indica qué hijo puede disminuir su tamaño
+    valores: 0 (no puede disminuir), si es mayor que 0 disminuirá más a más valor*/
