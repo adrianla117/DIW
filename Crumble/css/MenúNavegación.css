@@ -12,13 +12,14 @@ ul {
 /*HORIZONTAL*/
 
 .horizontal {
+    position: sticky;
+    top: 0;
     font-family: 'Kaisei HarunoUmi';
     font-size: 22px;
-    background-color: white;
     border: 1px solid rgba(255, 147, 147, 0.82);
     border-radius: 8px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgb(255, 255, 255, 0.82);
+    background-color: white;
 }
 
 .horizontal li {
@@ -93,18 +94,17 @@ ul {
 
 
 
-
 /*VERTICAL*/
 
-
+/*
 .vertical li:last-child a{
     color: white;
 }
 
 .vertical li:nth-last-child(2) { /*Para que no me aparezca el border-bottom en el penúltimo elemento (niveles)*/
-    border-bottom: none;
+    /*border-bottom: none;
 }
-
+/*
 .vertical {
     font-family: 'Kaisei HarunoUmi';
     font-size: 22px;
@@ -151,6 +151,7 @@ ul {
 }
 
 /*Hacemos los hover*/
+/*
 .vertical li:not(:first-child) a:hover {
     color: #FFA0A1;
     background-color: rgb(255, 255, 255, 0.82);
@@ -159,4 +160,24 @@ ul {
 .vertical li:not(:first-child) a:hover i {
     color: #FFA0A1;
     transition: color 0.3s, background-color 0.3s;
+}
+*/
+
+
+.cabecera1 {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border: 1px solid rgba(224, 101, 102, 0.20);
+    box-shadow: 0 4px 4px rgba(224, 101, 102, 0.15), inset 0 4px 4px rgba(224, 101, 102, 0.25);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.LogoCabecera1{
+    width: 180px;
+    height: 123px;
 }
