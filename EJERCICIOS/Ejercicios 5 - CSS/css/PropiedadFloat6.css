@@ -1,0 +1,63 @@
+.bloque {
+    position: absolute;
+    padding: 20px;
+}
+
+.bloque1 {
+    top: 200px;
+    left: 100px;
+    width: 300px;
+    height: 100px;
+    background-color: red;
+    z-index: 4;
+}
+
+.bloque2 {
+    top: 150px;
+    left: 150px;
+    width: 300px;
+    height: 400px;
+    background-color: blue;
+    z-index: 3;
+}
+
+.bloque3 {
+    top: 450px;
+    left: 50px;
+    width: 450px;
+    height: 150px;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.hijo {
+    position: absolute;
+    padding: 10px;
+}
+
+.hijo1 {
+    top: 200px;
+    left: 20px;
+    width: 250px;
+    height: 100px;
+    background-color: pink;
+    z-index: 4;
+}
+
+.hijo2 {
+    top: 20px;
+    left: 100px;
+    width: 150px;
+    height: 300px;
+    background-color: darkgreen;
+    z-index: 3;
+}
+
+.hijo3 {
+    top: 310px;
+    left: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    z-index: 2;
+}

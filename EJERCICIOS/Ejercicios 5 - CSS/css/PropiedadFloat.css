@@ -1,0 +1,7 @@
+.parrafo::first-letter {
+    float: left;
+    font-size: 60px;
+    line-height: 1;
+    padding-right: 10px;
+    text-shadow: 2px 2px 5px #000000, -2px -2px 5px #fff;
+}

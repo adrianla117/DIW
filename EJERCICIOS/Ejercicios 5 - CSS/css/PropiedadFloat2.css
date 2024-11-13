@@ -1,0 +1,23 @@
+div div{
+    width: 100px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+
+.contenedor1 {
+    background-color: blue;
+}
+
+.contenedor2 {
+    background-color: green;
+}
+
+.contenedor3 {
+    background-color: yellow;
+}
+
+.contenedor4 {
+    background-color: red;
+}

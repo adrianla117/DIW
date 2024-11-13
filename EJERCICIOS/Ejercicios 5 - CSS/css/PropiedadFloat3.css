@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div div {
+    width: 25%;
+    height: 150px;
+    float: left;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.caja1 {
+    background-color: #6b6b6b;
+}
+
+.caja2 {
+    background-color: #909090;
+}
+
+.caja3 {
+    background-color: #b0b0b0;
+}
+
+.caja4 {
+    background-color: #d3d3d3;
+}
