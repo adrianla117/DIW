@@ -21,8 +21,8 @@
 
     Propiedades de los hijos directos del contenedor flexible
 
-        */
 */
+
 *{
     box-sizing: border-box; /*Así en vez de medir 101px (border+width por ejemplo), mediría 100px como está especificado en el width*/
     margin: 0;
