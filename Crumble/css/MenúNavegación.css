@@ -92,6 +92,11 @@ ul {
     transition: color 0.3s, background-color 0.3s;
 }
 
+ul li a.active {
+    text-decoration: underline; /*Para que cuando clickemos en una opcion, ésta se quede subrayada indicando que estamos en dicha opción*/
+    font-weight: bold;
+}
+
 
 
 /*VERTICAL*/
@@ -224,9 +229,18 @@ footer a {
 }
 
 .contenedorImagenes img{
-    width: 24px;
+    width: 32px;
     margin: 0 5px;
     vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.contenedorImagenes img:hover{
+    width: 35px; /*aumenta el tamaño del icono al pasar por encima de el*/
+}
+
+.contenedorImagenes img:active{
+    transform: scale(0.8); /*así hacemos que al hacer click disminuya un poco el tamaño del icono, lo que da un efecto de hacer click fisicamente*/
 }
 
 .licencia {
