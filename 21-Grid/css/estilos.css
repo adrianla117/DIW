@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+.grid-container{
+    background-color: aquamarine;
+    display: grid;
+    /*a veces (chatgpt) pone display: inline-grid; Significa que crea una cuadrícula que ocupa el contenido del texto, 
+    mientras que en display: grid; la cuadrícula llega hasta todo el ancho de la pantalla*/
+    /*PROPIEDADES*/
+    /*grid-template-columns: permite definir el núm y ancho de las columnas
+    se le pasa una lista de valores separados por espacios, px, cm, pt, %, fr (fracción de la cuadrícula), auto*/
+    
+    /*grid-template-columns: 100px 300px 200px;*/ /*Genera columnas y le da tamaño a cada una. 1era columna 100px, 2da columna 300px, 3era columna 200px*/ /*si le das mucho ancho, genera barra de desplazamiento*/
+    /*grid-template-columns: 25% 50% 25%;*/
+    /*grid-template-columns: 1fr 3fr 1fr;*/ /*Las fracciones asignan espacio disponible a un elemento*/
+    /*grid-template-columns: auto auto auto;*/ /*Deja un espacio según el contenido que tenga el elemento*/
+    /*grid-template-columns: 25% 100px auto;*/ /*Podemos mezclar con porcentajes, columnas, pixeles, etc*/
+    /*grid-template-columns: repeat(3,auto);*/ /*es lo mismo que grid-template-columns: auto auto auto;*/
+    grid-template-columns: 100px 300px 200px;
+
+    /*justify-content mueve la cuadrícula y la alinea horizontalmente
+    valores: center, start, end, space-between, space-around, space-evenly*/
+    justify-content: space-between;
+
+    /*grid-template-rows: permite definir el núm de filas y tamaño
+    se le pasa una lista de valores separados por espacios, px, %, auto, fr*/
+    /*grid-template-rows: 100px 200px 100px;*/
+    /*grid-template-rows: 100px 200px 100px 200px 100px 400px;*/ /*Podemos añadir más filas pero no aparecerán como tal si no están definidas*/
+    /*ojo con height: 200px;*/
+    /*grid-template-rows: 25% 50% 25%;*/ /*Los porcentajes no dependen de sí mismos*/
+    /*grid-template-rows: repeat(3,auto);*/
+    grid-template-rows: 100px 200px 100px;
+    height: 600px;
+
+    /*align-content: alinea la cuadrícula verticalmente.
+    center, start, end, space-betwwen...*/
+    align-content: space-between;
+}
+
+.grid-item{
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+/*CONTAINER2*/
+
+.grid-container2{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    /*column-gap: 100px;*/ /*ojo con el gap cuando utilizamos píxeles en grid-template-columns/rows. Si lo ponemos en auto o fracciones todo bien*/
+    /*row-gap: 100px;*/
+    gap: 100px; /* es lo mismo que si ponemos juntos column-gap: 100px y row-gap: 100px*/
+    /*gap: propiedad abreviada de column-gap y row-gap.
+    column-gap: da espacio entre columnas
+    row-gap: da espacio entre filas*/
+}
+
+.grid-item2{
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
