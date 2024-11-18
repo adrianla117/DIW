@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    background-color: aquamarine;
+    display: grid; /*display: inline-grid;*/
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,100px); /*cada fila tiene 100px*/
+    column-gap: 10px;
+    row-gap: 10px;
+    /*gap: 10px; Es el espacio entre columnas y filas. Esta es la propiedad abreviada*/
+    /*justify-content: alinear la cuadrícula horizontalmente
+    align-content: alinear la cuadrícula verticalmente*/
+}
+
+.grid-item{
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.grid-item:nth-of-type(1){
+    grid-column-start: 1; /*empieza en la columna 1*/
+    grid-column-end: 3; /*termina antes de la 3*/
+    /*grid-column: 1 / 3;*/ /*1 /span 2*/ /*esta es la propiedad abreviada*/ /*se expanden las columnas (en tamaño)*/
+}
+
+.grid-item:nth-of-type(4){
+    grid-column: 1 / span 4;
+}
+
+.grid-item:nth-of-type(5){
+    grid-row-start: 3; /*podemos mirar esto mejor en Inspeccionar en el navegador*/
+    grid-row-end: 5;
+    /*grid-row: 3 / 5;*/
+}

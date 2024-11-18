@@ -8,13 +8,15 @@ ul {
     list-style-type: none;
     padding: 12px;
 }
+body{
+    font-family: 'Kaisei HarunoUmi';
+}
 
 /*HORIZONTAL*/
 
 .horizontal {
     position: sticky;
     top: 0;
-    font-family: 'Kaisei HarunoUmi';
     font-size: 22px;
     border: 1px solid rgba(255, 147, 147, 0.82);
     border-radius: 8px;
@@ -61,7 +63,6 @@ ul {
 
 .boton-sesion {
     background-color: #FFA0A1;
-    border-radius: 5px;
     padding: 20px 30px;
     text-decoration: none;
     border-radius: 8px;
@@ -102,15 +103,83 @@ ul li a.active {
     height: 664px;
     background-color: rgba(255, 240, 240);
     border-radius: 4px;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 
 .cabecera2 {
-    width: 429px;
-    height: 392px;
+    width: 550px;
+    height: 450px;
     display: grid;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "logo2"
+                        "formulario"
+                        "boton"
+                        "apps";
+    justify-items: center;
+    align-items: center;
     background-color: white;
+    padding: 30px;
+    gap: 20px;
+}
+
+.contenedorLogo{
+    grid-area: logo2;
+}
+
+.logo2{
+    max-width: 170px; 
+    max-height: 150px;
+    padding: 12px;
+}
+
+form{
+    font-size: 16px;
+    grid-area: formulario;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+}
+
+form label{
+    text-align: left;
+}
+
+form input{
+   height: 35px;
+   width: 100%;
+   border: 1px solid #E06566;
+   padding: 5px 10px;
+}
+
+.botonAceptar{
+    grid-area: boton;
+    width: 100px;
+    height: 30px;
+    background-color: #FFA0A1;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.botonAceptar:hover{
+    color: #FFA0A1;
+    background-color: rgb(255, 255, 255, 0.82);
+}
+
+.apps{
+    grid-area: apps;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
