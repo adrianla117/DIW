@@ -222,9 +222,19 @@ input[type="email"]:focus, input[type="contraseña"]:focus{
 .appStore{
     width: 100px;
     height: 70px;
+    transition: transform 0.3s ease;
 }
 
 .playStore{
     width: 100px;
     height: 70px;
+    transition: transform 0.3s ease;
+}
+
+.appStore:hover{
+    transform: scale(1.1);
+}
+
+.playStore:hover{
+    transform: scale(1.1);
 }
