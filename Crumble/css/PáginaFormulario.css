@@ -139,8 +139,8 @@ form{
     font-size: 16px;
     grid-area: formulario;
     display: grid;
-    gap: 15px
-    max-width: 400px;
+    gap: 15px;
+    /*max-width: 400px*/
 }
 
 .contenedorCorreo, .contenedorContraseña{
