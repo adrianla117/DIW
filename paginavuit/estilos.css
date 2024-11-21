@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-color: black;
+    width: 80%;
+    border-radius: 20px;
+    margin: 0 auto; /*así centramos un contenedor*/
+    padding: 15px;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.nav{
+    box-shadow: 1px 1px 6px greenyellow;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.nav a.activo{
+    background-color: gray;
+    border-top: 5px solid greenyellow;
+}
+
+.nav a:hover:not(.activo){
+    background-color: yellowgreen;
+    color: black;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    color: white;
+    text-align: justify;
+}
+
+.gallery .target{
+    flex-basis: 31%;
+    /*width si están las dos, prevalece flex-basis*/
+    padding: 10px;
+}
+
+.gallery .target:hover{
+    box-shadow: 1px 1px 6px gainsboro;
+}
+
+.gallery .target h2, .gallery .target img{
+    margin-bottom: 10px;
+}
+
+.footer .imagenesPie{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .imagenesPie img:hover{
+    filter: brightness(0.3);
+}
+
+.footer .enlacesPie{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer .enlacesPie span{
+    color: white;
+}
+
+.footer .enlacesPie a{
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+.footer .enlacesPie a:hover{
+    text-decoration: underline dotted;
+    color: greenyellow;
+}
