@@ -1,0 +1,58 @@
+@media screen and (max-width:480px){
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: red;
+        text-decoration: 2px solid red;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:481px){
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: blue;
+        text-decoration: 2px solid blue;
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:601px){
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: green;
+        text-decoration: 2px solid green;
+    }
+}
+
+@media screen and (min-width:901px){
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: pink;
+        text-decoration: 2px solid pink;
+    }
+}
+
+@media screen and (orientation:landscape){
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        size: 50px;
+    }
+}
+
+@media screen {
+    h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        size: 20px;
+    }
+}
+
+/*
+    Puntos de ruptura típicos:
+    -Pantallas extra pequeñas (phones, hasta 600px)
+    -Pantallas pequeñas (tablets en vertical, y large phones, desde 601px hasta 768px)
+    -Pantallas medianas (tablets en horizontal desde 768px hasta 992px)
+    -Pantallas grandes (laptops/desktop desde 992px hasta 1200px)
+    -Pantallas extra grandes (large laptops/desktops desde 1200px en adelante)
+*/

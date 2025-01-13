@@ -16,7 +16,7 @@
         no-wrap (por defecto, no podemos tener varias filas), wrap (sí podemos tener varias filas)
 
         align-content: modifica el comportamiento de la propiedad flex-wrap. Es similar a align.items, pero
-        en vez de alinear items flexibles, alinea línea flexibles.
+        en vez de alinear items flexibles, alinea líneas flexibles.
         center, flex-start, flex-end, space-between, space-around
 
     Propiedades de los hijos directos del contenedor flexible
