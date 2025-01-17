@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+/*visibility: hidden;
+display: none;
+*/
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 16px;
+}
+
+.hamburger{
+    display: none; /*lo ocultas así*/
+}
+
+@media screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+    .menu{
+        flex-direction: column;
+        position: absolute;
+        right: 20px;
+        top: 80px;
+        background-color: black;
+
+    }
+    .menu.activo{
+        display: flex;
+    }
+}
