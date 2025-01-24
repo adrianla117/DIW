@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Animaciones</title>
+        <link rel="stylesheet" href="css/estilos4.css">
+    </head>
+    <style>
+        .pelota{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: yellowgreen;
+            /*animation-name: obligatorio, es el nombre de la animación*/
+            position: relative;
+            animation-name: cambiaPosicion, cambiaColor;
+            /*animation-duration: por defecto 0, valor positivo, s, ms*/
+            animation-duration: 3s, 3s;
+            /*animation-iteration-count: infinite, 1, 2, 3, 4...*/
+            animation-iteration-count: 1;
+            /*normal, reverse (va al revés), alternate (va normal y luego al revés), alternate-reverse (viceversa)*/
+            animation-direction: normal, normal;
+            /*retraso: s o ms, puede ser negativo*/
+            /*animation-delay: -2;*/
+            /*velocidad animación: linear, ease-in, ease-in-out*/
+            animation-timing-function: linear, ease-in-out;
+            /*si la animación no se repodruce de forma infinite, cómo queda el estado final
+            forwards, backwards*/
+            animation-fill-mode: backwards;
+            /*animation es la abreviada*/
+            /*animation: cambiaColor 4s linear infinite normal, cambiaPosicion 4s linear infinite normal;*/
+        }
+        /*@keyframes cambiaColor{
+            from{
+                background-color: black;
+            }
+            to{
+                background-color: red;
+            }
+        }*/
+        @keyframes cambiaColor{
+            0%{
+                background-color: yellowgreen;
+            }
+            50%{
+                background-color: red;
+            }
+            55%{
+                background-color: red;
+            }
+            100%{
+                background-color: yellowgreen;
+            }
+        }
+
+        @keyframes cambiaPosicion{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left: 300px;
+            }
+            50%{
+                top: 300px;
+                left: 300px;
+            }
+            75%{
+                top: 300px;
+                left: 0%;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+    <body>
+        <!-- Animación
+         se crean con regla @keyframes
+         Es una regla css, se situará en el documento css externo, dentro de <style>
+         sintaxis:
+
+            animación con dos fotogramas
+            @keyframes nombreAnimacion{
+                fotograma inicial
+                from o 0%{
+                    //estilos css
+                }
+                fotograma final
+                to o 100%{
+                    //estilos css
+                }
+            animación con más de dos fotogramas
+            @keyframes nombreAnimacion{
+                0%{
+                    //estilos css
+                }
+                50%{
+                    //estilos css
+                }
+                100%{
+                    //estilos css
+                }
+            }
+
+            Tras crear la animación hay que asociarla a algún elemento html
+            animation (propiedad abreviada)
+            animation-name
+            animation-duration
+            animation-delay
+            ----
+
+        -->
+        <div class="pelota"></div>
+   </body>
+</html>

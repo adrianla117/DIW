@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/estilos4.css">
+        <style>
+            audio{
+                width: 300px;
+                background-color: red;
+                border-radius: 20px;
+                border: 3px solid purple;
+                /*height: 300px; esto se sale y mostraria el color real en lugar de mezclarlo*/
+            }
+        </style>
+    </head>
+    <body>
+        <!--1 forma-->
+            <a href="./terraria.mp3">Waaaaaa</a>
+        <!--2 forma-->
+            <audio src="./terraria.mp3" controls autoplay loop hidden>
+                Waaaaaa (a veces sale no se ha podido cargar el audio)
+            </audio>
+            <!--
+                Atributos opcionales:
+                controls: Muestra el reproductor de sonido
+                autoplay: al cargar la página el audio se reproduce
+                muted: al cargar la página el audio no tenga sonido
+                loop: que el audio se reproduzca en bucle
+                hidden: oculta el reproductor de audio
+            -->
+        <!--3 forma-->
+        <audio controls muted autoplay loop>
+            <source src="./terraria.mp3" type="audio/mp3">
+            <source src="./terraria.ogg" type="audio/ogg">
+            <soucer src="./terraria.wav" type="audio/wav">
+            No se ha podido cargar el audio
+        </audio>
+   </body>
