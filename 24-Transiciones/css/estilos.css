@@ -1,0 +1,31 @@
+/*
+    TRANSICIONES
+
+    transition: all 300ms linear;
+    transition-property: se indican las propiedades css a cambiar en la transición
+    (width, height..) all para cambiar todas las propiedades animables
+    transition-duratiion: duración de la transición, se mide s, ms por defecto es 0
+    y entonces no funciona, es obligatorio
+    transition-delay: retraso se mide en s, ms
+    transition-timing-function: velocidad de la transición, linear, ease, ease-in
+    ease-out, steps()
+
+    Se asocia con un elemento html y usando transition
+*/
+
+#btnl{
+    padding: 15px 20px;
+    background-color: gainsboro;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 10px;
+    /*transition-property: all;*/ /*puedes ponerlo a todas las propiedad que sean animables (all), o escribirlos uno a uno (background-color, box-shadow...)*/
+    /*transition-duration: 0.5s;*/
+    /*transition-timing-function: linear;*/
+    transition: all 0.5s linear;
+}
+
+#btnl:hover{
+    background-color: grey;
+    box-shadow: 2px 2px 4px gainsboro;
+    transform: scale(1.2);
+}
