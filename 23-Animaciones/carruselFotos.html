@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Carrusel Fotos</title>
+    </head>
+    <style>
+        /*
+        .galeria{
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slider{
+            display: flex;
+            width: 400%;
+            animation: cambiar 20s infinite alternative;
+        }
+
+        .slider img{
+            width: 100%;
+            height: 500px; /*si ponemos auto tendrán distintas alturas*/
+        
+        /*
+        @keyframes cambiar{
+            0%{
+                margin-left: 0;
+            }
+            20%{
+                margin-left: 0;
+            }
+            25%{
+                margin-left: -100%;
+            }
+            45%{
+                margin-left: -100%;
+            }
+            50%{
+                margin-left: -200%;
+            }
+            70%{
+                margin-left: -200%;
+            }
+            75%{
+                margin-left: -300%;
+            }
+            100%{
+                margin-left: -300%;
+            }
+        }
+        */
+
+        .galeria{
+            width: 500px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .slider{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: cambiar 4s infinite alternate;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes cambiar{
+            0%{
+                margin-left: 0%;
+            }
+            20%{
+                margin-left: 0%;
+            }
+            25%{
+                margin-left: -100%;
+            }
+            45%{
+                margin-left: -100%;
+            }
+            50%{
+                margin-left: -200%;
+            }
+            70%{
+                margin-left: -200%;
+            }
+            75%{
+                margin-left: -300%;
+            }
+            100%{
+                margin-left: -300%;
+            }
+        }
+
+    </style>
+    <body>
+        <div class="galeria">
+            <div class="slider">
+                <img src="imagen1.jpg">
+                <img src="imagen2.jpg">
+                <img src="imagen3.jpg">
+                <img src="imagen4.jpg">
+                
+            </div>
+        </div>
+   </body>
+</html>
