@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Animaciones</title>
+    </head>
+    <style>
+        .contenedorCielo{
+            animation: deslizar1 10s linear infinite;
+            background-image: url(cielo.png);
+            background-repeat: repeat-x;
+            height: 142px;
+        }
+
+        .contenedorMar{
+            position: relative;
+            
+            height: 142px;
+            animation: deslizar1 6s linear infinite;
+            background-image: url(mar.png);
+        }
+
+        .contenedorPersona{
+            position: absolute;
+            height: 130px;
+            left: 250px;
+            width: 350px;
+            bottom: 0;
+            background-image: url(persona.png);
+            animation: deslizar1 6s linear infinite;
+            background-position: center;
+            background-size: contain;
+        }
+
+        @keyframes deslizar1 {
+            0%{
+                background-position: 0;
+            }
+            100%{
+                background-position: 550px;
+            }
+        }
+    </style>
+    <body>
+        
+            <div class="contenedorCielo"></div>
+            <div class="contenedorMar">
+                <div class="contenedorPersona"></div>
+            </div>
+          
+   </body>
+</html>
+
+
+
