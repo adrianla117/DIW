@@ -14,8 +14,7 @@
         }
 
         .contenedorMar{
-            position: relative;
-            
+            position: relative;     
             height: 142px;
             animation: deslizar1 6s linear infinite;
             background-image: url(mar.png);
@@ -23,14 +22,15 @@
 
         .contenedorPersona{
             position: absolute;
-            height: 130px;
-            left: 250px;
-            width: 350px;
-            bottom: 0;
-            background-image: url(persona.png);
-            animation: deslizar1 6s linear infinite;
-            background-position: center;
-            background-size: contain;
+            height: 170px;
+            left: 850px;
+            width: 95px;
+            overflow: hidden;
+            bottom: 5px;
+        }
+        .contenedorPersona img{
+            animation: deslizar2 1s infinite steps(6);
+            position: relative;
         }
 
         @keyframes deslizar1 {
@@ -38,7 +38,15 @@
                 background-position: 0;
             }
             100%{
-                background-position: 550px;
+                background-position: -550px;
+            }
+        }
+        @keyframes deslizar2 {
+            0%{
+                left: 0;
+            }
+            100%{
+                left: -624px;
             }
         }
     </style>
@@ -46,7 +54,9 @@
         
             <div class="contenedorCielo"></div>
             <div class="contenedorMar">
-                <div class="contenedorPersona"></div>
+                <div class="contenedorPersona">
+                    <img src="persona.png">
+                </div>
             </div>
           
    </body>

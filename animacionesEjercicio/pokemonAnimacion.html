@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Pokemon</title>
+    </head>
+    <style>
+        .paisaje{
+            width: 750px;
+            height: 900px;
+            background-image: url(paisajePokemon.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+        }
+        .huevo{
+            animation: eclosion 5s linear forwards;
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 30%;
+            top: 60%;
+            background-repeat: no-repeat;
+        }
+
+        .estrellas{
+            position: absolute;
+            animation: aparicion 8s linear forwards;
+            width: 350px;
+            height: 350px;
+            left: 30%;
+            top: 25%;
+        }
+        @keyframes eclosion {
+            0%{
+                background-image: url(huevo.png);
+            }
+            18%{
+                background-image: url(huevo-editar.png);
+            }
+            34%{
+                background-image: url(huevo-editar2.png);
+            }
+            50%{
+                background-image: url(huevo_eclosion.png);
+            }
+            66%{
+                background-image: url(happiny.png);
+            }
+            80%{
+                background-image: url(chansey.png);
+            }
+            100%{
+                background-image: url(blissey.png);
+            }
+        }
+
+        @keyframes aparicion{
+            66%{
+                background-image: url(estrellas.png);
+            }
+        }
+    </style>
+    <body>
+        <div class="paisaje">
+            <div class="estrellas"></div>
+            <div class="huevo">
+            </div>
+        </div>
+   </body>
+</html>
+
