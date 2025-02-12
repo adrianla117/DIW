@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Galeria Fotos</title>
+    </head>
+    <style>
+        .contenedor{
+            width: 494px;
+            height: 340px;
+            overflow: hidden;
+        }
+        .contenedor2{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: cambiar 4s infinite alternate;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        @keyframes cambiar{
+            0%{
+                margin-left: 0%;
+            }
+            20%{
+                margin-left: 0%;
+            }
+            25%{
+                margin-left: -100%;
+            }
+            45%{
+                margin-left: -100%;
+            }
+            50%{
+                margin-left: -200%;
+            }
+            70%{
+                margin-left: -200%;
+            }
+            75%{
+                margin-left: -300%;
+            }
+            100%{
+                margin-left: -300%;
+            }
+        }
+    </style>
+    <body>
+        <div class="contenedor">
+            <div class="contenedor2">
+                <img src="foto1.jpg">
+                <img src="foto2.avif">
+                <img src="foto3.avif">
+                <img src="foto4.avif">
+            </div>
+        </div>
+   </body>
+</html>
+
+
+

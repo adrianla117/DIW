@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transición de Opacidad en Imágenes</title>
+    <style>
+        .contenedor{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .contenedor img{
+            width: 400px;
+            height: 400px;
+            transition: opacity 1.5s ease-in-out;
+            cursor: pointer;
+        }
+        .contenedor img[alt="Gatocan"]:hover{
+            opacity: 0.5;
+        }
+        .contenedor img[alt="Marsupilami"]:hover{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <img src="gatocan.png" alt="Gatocan">
+        <img src="marsupilami.png" alt="Marsupilami">
+    </div>
+</body>
+</html>

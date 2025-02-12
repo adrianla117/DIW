@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Gato y Tortuga en Movimiento</title>
+    </head>
+    <style>
+        .contenedor3{
+            position: absolute;
+            width: 500px;
+            height: 950px;
+            overflow: hidden;
+        }
+        .contenedor{
+            position: absolute;
+            width: 660px;
+            height: 41.66px;
+            overflow: hidden;
+            top: 19%;
+            left: -5%;
+            position: relative;
+        }
+        .contenedor2{
+            position: relative;
+            width: 660px;
+            animation: movimiento4 4s linear infinite;
+        }
+        .contenedor .contenedor2 img[alt="gato"]{
+            position: relative;
+            animation: movimiento3 1s infinite steps(12);
+        }
+        .contenedorIsla{
+            background-image: url(isla.png);
+            height: 447px;
+            width: 500px;
+            background-repeat: repeat-x;
+            overflow: hidden;
+        }
+        .contenedorMar{
+            background-image: url(fondoMar.png);
+            height: 213px;
+            position: relative;
+            top: 51%;
+            background-repeat: repeat-x;
+            animation: movimiento1 10s linear infinite;
+        }
+        .contenedorTortuga{
+            position: absolute;
+            width: 127.5px;
+            height: 76px;
+            overflow: hidden;
+            top: 20%;
+            left: 30%;
+        }
+        .contenedorTortuga img{
+            position: relative;
+            animation: movimiento2 1s infinite steps(4);
+        }
+        
+        @keyframes movimiento1 {
+            0%{
+                background-position: 0;
+            }
+            100%{
+                background-position: 626px;
+            }
+        }
+        @keyframes movimiento2 {
+            0%{
+                right: 0;
+            }
+            100%{
+                right: 510px;
+            }
+        }
+        @keyframes movimiento3 {
+            0%{
+                bottom: 0;
+            }
+            100%{
+                bottom: 500px;
+            }
+        }
+        @keyframes movimiento4 {
+            0%{
+                left: 80%;
+            }
+            100%{
+                left: -10%;
+            }
+        }
+    </style>
+    <body>
+        <div class="contenedor3">
+        <div class="contenedor">
+            <div class="contenedor2">
+                <img src="gato.png" alt="gato">
+            </div>
+        </div>
+    </div>
+        <div class="contenedorIsla">
+            <div class="contenedorMar">
+                <div class="contenedorTortuga">
+                    <img src="tortuga.png">
+                </div>
+            </div>
+        </div>
+   </body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Gato y Tortuga en Movimiento</title>
+    </head>
+    <style>
+        .contenedorIsla{
+            background-image: url(isla.avif);
+            height: 447px;
+            width: 626px;
+            background-repeat: repeat-x;
+            overflow: hidden;
+        }
+        .contenedorMar{
+            background-image: url(fondoMar.png);
+            height: 213px;
+            position: relative;
+            top: 53%;
+            background-repeat: repeat-x;
+            animation: movimiento1 10s linear infinite;
+        }
+        .contenedorTortuga{
+            position: absolute;
+            width: 127.5px;
+            height: 76px;
+            overflow: hidden;
+            top: 20%;
+            left: 30%;
+        }
+        .contenedorTortuga img{
+            position: relative;
+            animation: movimiento2 1s infinite steps(4);
+        }
+        
+        @keyframes movimiento1 {
+            0%{
+                background-position: 0;
+            }
+            100%{
+                background-position: 626px;
+            }
+        }
+        @keyframes movimiento2 {
+            0%{
+                right: 0;
+            }
+            100%{
+                right: 510px;
+            }
+        }
+    </style>
+    <body>
+        <div class="contenedorIsla">
+            
+            <div class="contenedorMar">
+                <img src="gato.png">
+                <div class="contenedorTortuga">
+                    <img src="tortuga.png">
+                </div>
+            </div>
+        </div>
+   </body>
+</html>
+
+-->

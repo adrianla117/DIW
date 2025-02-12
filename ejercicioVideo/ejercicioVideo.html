@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Audio</title>
+    <style>
+        audio{
+            width: 300px;
+            background-color: red;
+            border-radius: 20px;
+            border: 3px solid purple;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="La Caida de Edgar (el original).mp4">Descargar MP3</a>
+
+    <audio src="La Caida de Edgar (el original).mp4" controls autoplay loop hidden>
+    </audio>
+
+    <audio controls muted autoplay loop>
+        <source src="La Caida de Edgar (el original).mp4" type="audio/mp3">
+        <source src="La Caida de Edgar (el original).mp4" type="audio/ogg">
+        <source src="La Caida de Edgar (el original).mp4" type="audio/wav">
+    </audio>
+
+</body>
+</html>

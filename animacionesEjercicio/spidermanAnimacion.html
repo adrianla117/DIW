@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Pokemon</title>
+    </head>
+    <style>
+        .pueblo{
+            background-repeat: repeat-x;
+            background-image: url(pueblo.avif);
+            height: 351px;
+            
+            overflow: hidden;
+        }
+        .contenedor{
+            width: 500px;
+            height: 100%;
+            position: relative;
+            background-repeat: no-repeat;
+            animation: salto 12s linear forwards;
+        }
+        .contenedorDoraemon{
+            animation: pelea 11s linear forwards 7s;
+            position: relative;
+            width: 150px;
+            height: 150px;
+            left: 65%;
+            bottom: -30%;
+        }
+        @keyframes salto {
+           0%, 30%{
+            background-image: url(spiderman.png);
+            bottom: 50%;
+           }
+           40%{
+            bottom: 35%;
+            background-image: url(spiderman.png);
+            background-position: 50% center;
+           }
+           60%{
+            background-image: url(spiderman2.png);
+            bottom: 5%;
+            background-position: 60% center;
+           }
+           85%{
+            background-image: url(spiderman4.png);
+            bottom: -15%;
+            background-position: 60% center;
+           }
+           99%{
+            background-image: url(spiderman5.png);
+            bottom: -20%;
+            background-position: 60% center;
+           }
+           100%{
+            background-image: url(spiderman6.png);
+            bottom: -20%;
+            background-position: 70% center;
+           }
+        }
+        @keyframes pelea {
+            0%{
+
+            }
+            90%, 100%{
+                background-image: url(doraemon.png);
+                background-position: 90% center;
+            }
+        }
+    </style>
+    <body>
+        <div class="pueblo">
+            <div class="contenedor">
+                <div class="contenedorDoraemon"></div>
+            </div>
+        </div>
+   </body>
+</html>
