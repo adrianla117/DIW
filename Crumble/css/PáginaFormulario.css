@@ -244,3 +244,327 @@ input[type="email"]:focus, input[type="contraseña"]:focus{
 .playStore:hover{
     transform: scale(1.1);
 }
+
+
+
+
+@media screen and (max-width: 1800px) and (min-width: 1527px){
+    .horizontal li{
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 1526px) and (min-width: 1327px){
+    .horizontal li{
+        width: 210px;
+    }
+    
+    .horizontal{
+        font-size: 20px;
+    }
+
+    .horizontal li:last-child {
+        width: 220px;
+        height: 90px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1326px) and (min-width: 1229px){
+    .horizontal li{
+        width: 190px;
+    }
+
+    .horizontal{
+        font-size: 18px;
+    }
+
+    .cabecera2 {
+        width: 520px;
+        height: 420px;
+    }
+
+    .logo2{
+        max-width: 150px; 
+        max-height: 130px;
+    }
+
+    form{
+        font-size: 14px;
+    }
+
+    #email, #contraseña{
+       height: 30px;
+       width: 250px;
+    }
+
+    .botonAceptar{
+        width: 90px;
+        height: 25px;
+    }
+
+    .botonAceptar a {
+        font-size: 14px;
+    }
+
+    .appStore, .playStore{
+        width: 80px;
+        height: 60px;
+    }
+
+    .horizontal li:last-child {
+        width: 220px;
+        height: 90px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1228px) and (min-width: 1129px){
+    .horizontal li{
+        width: 170px;
+    }
+
+    .horizontal{
+        font-size: 16px;
+    }
+
+    .cabecera2 {
+        width: 520px;
+        height: 420px;
+    }
+
+    .logo2{
+        max-width: 150px; 
+        max-height: 130px;
+    }
+
+    form{
+        font-size: 14px;
+    }
+
+    #email, #contraseña{
+       height: 30px;
+       width: 250px;
+    }
+
+    .botonAceptar{
+        width: 90px;
+        height: 25px;
+    }
+
+    .botonAceptar a {
+        font-size: 14px;
+    }
+
+    .appStore, .playStore{
+        width: 80px;
+        height: 60px;
+    }
+
+    .horizontal li:last-child {
+        width: 210px;
+        height: 90px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1128px) and (min-width: 1027px){
+    .horizontal li{
+        width: 150px;
+    }
+
+    .horizontal{
+        font-size: 14px;
+    }
+
+    .cabecera2 {
+        width: 480px;
+        height: 380px;
+    }
+
+    .logo2{
+        max-width: 130px; 
+        max-height: 110px;
+    }
+
+    form{
+        font-size: 12px;
+    }
+
+    #email, #contraseña{
+       height: 30px;
+       width: 250px;
+    }
+
+    .botonAceptar{
+        width: 80px;
+        height: 20px;
+    }
+
+    .botonAceptar a {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .appStore, .playStore{
+        width: 60px;
+        height: 40px;
+    }
+
+    .horizontal li:last-child {
+        width: 210px;
+        height: 90px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1026px) and (min-width: 927px){
+    .horizontal li{
+        width: 130px;
+    }
+
+    .horizontal{
+        font-size: 12px;
+    }
+
+    .cabecera2 {
+        width: 480px;
+        height: 380px;
+    }
+
+    .logo2{
+        max-width: 130px; 
+        max-height: 110px;
+    }
+
+    form{
+        font-size: 12px;
+    }
+
+    #email, #contraseña{
+       height: 30px;
+       width: 250px;
+    }
+
+    .botonAceptar{
+        width: 80px;
+        height: 20px;
+    }
+
+    .botonAceptar a {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .appStore, .playStore{
+        width: 60px;
+        height: 40px;
+    }
+
+    .horizontal li:last-child {
+        width: 200px;
+        height: 80px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 926px) and (min-width: 827px){
+    .horizontal li{
+        width: 110px;
+    }
+
+    .horizontal li{
+        font-size: 12px;
+    }
+
+    .cabecera2 {
+        width: 480px;
+        height: 380px;
+    }
+
+    .logo2{
+        max-width: 130px; 
+        max-height: 110px;
+    }
+
+    form{
+        font-size: 12px;
+    }
+
+    #email, #contraseña{
+       height: 30px;
+       width: 250px;
+    }
+
+    .botonAceptar{
+        width: 70px;
+        height: 20px;
+    }
+
+    .botonAceptar a {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .appStore, .playStore{
+        width: 55px;
+        height: 35px;
+    }
+
+    .horizontal li:last-child {
+        width: 200px;
+        height: 80px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 826px){
+    .horizontal li{
+        width: 80px;
+    }
+
+    .horizontal li{
+        font-size: 10px;
+    }
+
+    .cabecera2 {
+        width: 480px;
+        height: 380px;
+    }
+
+    .logo2{
+        max-width: 130px; 
+        max-height: 110px;
+    }
+
+    form{
+        font-size: 12px;
+    }
+
+    #email, #contraseña{
+       height: 30px;
+       width: 250px;
+    }
+
+    .botonAceptar{
+        width: 70px;
+        height: 20px;
+    }
+
+    .botonAceptar a {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .appStore, .playStore{
+        width: 55px;
+        height: 35px;
+    }
+
+    .horizontal li:last-child {
+        width: 195px;
+        height: 80px;
+        font-size: 10px;
+    }
+}

@@ -456,3 +456,250 @@ footer a {
 .politica:hover{
     text-decoration: underline;
 }
+
+
+
+@media screen and (max-width: 1800px) and (min-width: 1527px){
+    .horizontal li{
+        width: 250px;
+    }
+
+    .contenedorImagenes img{
+        width: 25px;
+    }
+
+    .contenedorCabecera1 .titulo{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1526px) and (min-width: 1327px){
+    .horizontal li{
+        width: 210px;
+    }
+    
+    .horizontal{
+        font-size: 20px;
+    }
+
+    .contenedorImagenes img{
+        width: 18px;
+    }
+
+    .contenedorCabecera1 .titulo{
+        font-size: 30px;
+    }
+
+    .contenedor1{
+        left: 50%;
+        width: 600px;
+        height: 350px;
+    }
+    
+    .contenedor2{
+        right: 50%;
+        width: 600px;
+        height: 350px;
+    }
+    
+    .contenedor3{
+        left: 50%;
+        top: 86%;
+        width: 600px;
+        height: 350px;
+    }
+    
+    .contenedor4{
+        right: 50%;
+        top: 86%;
+        width: 600px;
+        height: 350px;
+    }
+
+    .contenedorCorazon{
+        top: 82%;
+        left: 47%;
+    }
+    
+    .contenedorTexto1, .contenedorTexto2, .contenedorTexto3, .contenedorTexto4{
+        height: 250px;
+        width: 90%;
+    }
+
+    .texto1, .texto2, .texto3, .texto4{
+        font-size: 14px;
+    }
+
+    .horizontal li:last-child {
+        width: 220px;
+        height: 90px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1326px) and (min-width: 1229px){
+    .horizontal li{
+        width: 190px;
+    }
+
+    .horizontal{
+        font-size: 18px;
+    }
+
+    .contenedorImagenes img{
+        width: 14px;
+    }
+
+    .contenedorCabecera1 .titulo{
+        font-size: 28px;
+    }
+
+    .contenedorCorazon{
+        top: 82%;
+        left: 46.7%;
+    }
+    
+    .contenedorTexto1, .contenedorTexto2, .contenedorTexto3, .contenedorTexto4{
+        height: 250px;
+        width: 80%;
+    }
+
+    .texto1, .texto2, .texto3, .texto4{
+        font-size: 13px;
+    }
+
+    .horizontal li:last-child {
+        width: 220px;
+        height: 90px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1228px) and (min-width: 1129px){
+    .horizontal li{
+        width: 170px;
+    }
+
+    .horizontal{
+        font-size: 16px;
+    }
+
+    .contenedorImagenes img{
+        width: 10px;
+    }
+
+    .contenedorCabecera1 .titulo{
+        font-size: 26px;
+    }
+
+    .contenedorCorazon{
+        top: 83%;
+        left: 47%;
+    }
+
+    .contenedorCorazon img{
+        width: 80%;
+        height: 80%;
+    }
+    
+    .contenedorTexto1, .contenedorTexto2, .contenedorTexto3, .contenedorTexto4{
+        height: 250px;
+        width: 70%;
+    }
+
+    .texto1, .texto2, .texto3, .texto4{
+        font-size: 12px;
+    }
+
+    .horizontal li:last-child {
+        width: 210px;
+        height: 90px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1128px) and (min-width: 1027px){
+    .horizontal li{
+        width: 150px;
+    }
+
+    .horizontal{
+        font-size: 14px;
+    }
+
+    .contenedorImagenes img{
+        width: 10px;
+    }
+
+    .contenedorCabecera1 .titulo{
+        font-size: 24px;
+    }
+
+    .contenedorCorazon{
+        top: 83%;
+        left: 47%;
+    }
+
+    .contenedorCorazon img{
+        width: 80%;
+        height: 80%;
+    }
+    
+    .contenedorTexto1, .contenedorTexto2, .contenedorTexto3, .contenedorTexto4{
+        height: 250px;
+        width: 60%;
+    }
+
+    .texto1, .texto2, .texto3, .texto4{
+        font-size: 12px;
+    }
+
+    .horizontal li:last-child {
+        width: 210px;
+        height: 90px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 927px){
+    .horizontal li{
+        width: 130px;
+    }
+
+    .horizontal{
+        font-size: 12px;
+    }
+
+    .contenedorImagenes img{
+        width: 10px;
+    }
+
+    .contenedorCabecera1 .titulo{
+        font-size: 22px;
+    }
+
+    .contenedorCorazon{
+        top: 83%;
+        left: 46.5%;
+    }
+
+    .contenedorCorazon img{
+        width: 80%;
+        height: 80%;
+    }
+    
+    .contenedorTexto1, .contenedorTexto2, .contenedorTexto3, .contenedorTexto4{
+        height: 250px;
+        width: 50%;
+    }
+
+    .texto1, .texto2, .texto3, .texto4{
+        font-size: 10px;
+    }
+
+    .horizontal li:last-child {
+        width: 200px;
+        height: 80px;
+        font-size: 10px;
+    }
+}

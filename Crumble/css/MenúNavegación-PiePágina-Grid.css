@@ -300,3 +300,255 @@ footer a {
 .politica:hover{
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1800px) and (min-width: 1527px){
+    .horizontal li{
+        width: 250px;
+    }
+
+    .contenedorImagenes img{
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 1526px) and (min-width: 1327px){
+    .horizontal li{
+        width: 210px;
+    }
+    
+    .horizontal{
+        font-size: 20px;
+    }
+
+    .contenedorImagenes img{
+        width: 18px;
+    }
+
+    .horizontal li:last-child {
+        width: 220px;
+        height: 90px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1326px) and (min-width: 1229px){
+    .horizontal li{
+        width: 190px;
+    }
+
+    .horizontal{
+        font-size: 18px;
+    }
+
+    .titulo1, .titulo2, .titulo3, .titulo4{
+        font-size: 30px;
+    }
+
+    .texto1, .texto2, .texto3, .texto4, .footer > h3, p{
+        font-size: 18px;
+    }
+
+    .foto1 > img, .foto2 > img, .foto3 > img, .foto4 > img{
+        height: 220px;
+    }
+
+    .LogoCabecera1{
+        width: 160px;
+        height: 113px;
+    }
+
+    .contenedorImagenes img{
+        width: 14px;
+    }
+
+    .horizontal li:last-child {
+        width: 220px;
+        height: 90px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1228px) and (min-width: 1129px){
+    .horizontal li{
+        width: 170px;
+    }
+
+    .horizontal{
+        font-size: 16px;
+    }
+
+    .titulo1, .titulo2, .titulo3, .titulo4{
+        font-size: 26px;
+    }
+
+    .texto1, .texto2, .texto3, .texto4, .footer > h3, p{
+        font-size: 16px;
+    }
+
+    .foto1 > img, .foto2 > img, .foto3 > img, .foto4 > img{
+        height: 200px;
+    }
+
+    .LogoCabecera1{
+        width: 140px;
+        height: 103px;
+    }
+
+    .contenedorImagenes img{
+        width: 10px;
+    }
+
+    .horizontal li:last-child {
+        width: 210px;
+        height: 90px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1128px) and (min-width: 1027px){
+    .horizontal li{
+        width: 150px;
+    }
+
+    .horizontal{
+        font-size: 14px;
+    }
+
+    .titulo1, .titulo2, .titulo3, .titulo4{
+        font-size: 22px;
+    }
+
+    .texto1, .texto2, .texto3, .texto4, .footer > h3, p{
+        font-size: 14px;
+    }
+
+    .foto1 > img, .foto2 > img, .foto3 > img, .foto4 > img{
+        height: 180px;
+    }
+
+    .LogoCabecera1{
+        width: 130px;
+        height: 93px;
+    }
+
+    .contenedorImagenes img{
+        width: 10px;
+    }
+
+    .horizontal li:last-child {
+        width: 210px;
+        height: 90px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1026px) and (min-width: 927px){
+    .horizontal li{
+        width: 130px;
+    }
+
+    .horizontal{
+        font-size: 12px;
+    }
+
+    .titulo1, .titulo2, .titulo3, .titulo4{
+        font-size: 18px;
+    }
+
+    .texto1, .texto2, .texto3, .texto4, .footer > h3, p{
+        font-size: 12px;
+    }
+
+    .foto1 > img, .foto2 > img, .foto3 > img, .foto4 > img{
+        height: 160px;
+    }
+
+    .LogoCabecera1{
+        width: 110px;
+        height: 83px;
+    }
+
+    .contenedorImagenes img{
+        width: 10px;
+    }
+
+    .horizontal li:last-child {
+        width: 200px;
+        height: 80px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 926px) and (min-width: 827px){
+    .horizontal li{
+        width: 110px;
+    }
+
+    .horizontal li{
+        font-size: 12px;
+    }
+
+    .titulo1, .titulo2, .titulo3, .titulo4{
+        font-size: 16px;
+    }
+
+    .texto1, .texto2, .texto3, .texto4, .footer > h3, p{
+        font-size: 10px;
+    }
+
+    .foto1 > img, .foto2 > img, .foto3 > img, .foto4 > img{
+        height: 140px;
+    }
+
+    .LogoCabecera1{
+        width: 100px;
+        height: 70px;
+    }
+
+    .contenedorImagenes img{
+        width: 10px;
+    }
+
+    .horizontal li:last-child {
+        width: 200px;
+        height: 80px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 826px){
+    .horizontal li{
+        width: 80px;
+    }
+
+    .horizontal li{
+        font-size: 10px;
+    }
+
+    .titulo1, .titulo2, .titulo3, .titulo4{
+        font-size: 14px;
+    }
+
+    .texto1, .texto2, .texto3, .texto4, .footer > h3, p{
+        font-size: 10px;
+    }
+
+    .foto1 > img, .foto2 > img, .foto3 > img, .foto4 > img{
+        height: 120px;
+    }
+
+    .LogoCabecera1{
+        width: 100px;
+        height: 70px;
+    }
+
+    .contenedorImagenes img{
+        width: 10px;
+    }
+
+    .horizontal li:last-child {
+        width: 195px;
+        height: 80px;
+        font-size: 10px;
+    }
+}
